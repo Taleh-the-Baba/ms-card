@@ -1,6 +1,7 @@
 # ms-card
 
 ## Run docker-compose file
+infra/default/default
  - docker-compose -f default-compose.yaml up
 ### docker-compose file contains postgres for db
 ### In case of modifying db schema add new change-set or delete all images and volumes and recreate using commands:
