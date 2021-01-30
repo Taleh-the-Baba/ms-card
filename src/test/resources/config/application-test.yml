@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5435/ms-card
+    username: postgresadmin
+    password: admin123
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+      - org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration
+
+server:
+  port: 23456
+
+application:
+  security:
+    authentication:
+      jwt:
+        secret: test-secrettest-secrettest-secrettest-secrettest-secrettest-secrettest-secrettest-secrettest-secrettest-secret
+        token-validity-in-seconds: 900
+        time-to-live-in-cache: 900

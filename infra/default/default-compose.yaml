@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  card-postgresql:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=ms-card
+      - POSTGRES_USER=postgresadmin
+      - POSTGRES_PASSWORD=admin123
+    ports:
+      - 5435:5432
